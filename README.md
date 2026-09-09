@@ -1,2 +1,2 @@
-# A
-My first repository on GitHub.
+# Hello
+> It's my first repository
