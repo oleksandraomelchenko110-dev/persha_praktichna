@@ -644,30 +644,11 @@ how to fix it, please visit the webpage mentioned above.
 
 | № | Назва групи (власне формулювання) | Рядки виводу, віднесені до групи | Обґрунтування |
 |---|---|---|---|
-| 1 | Формування запиту | > GET / HTTP/1.1
-> Host: x.org
-> User-Agent: curl/8.13.0
-> Accept: */* | Формування запиту до сервера. |
-| 2 | Визначення IP-адреси | * Host x.org:80 was resolved.
-* IPv6: (none)
-* IPv4: 151.101.3.52 | Визначєння адреси і домена сайту. |
-| 3 | Встановлення з'єднання | *   Trying 151.101.3.52:80...
-* Connected to x.org (151.101.3.52) port 80   | Встановалення з'єднання з адресою через 80-порт. |
-| 4 | Отримання відповіді | * Request completely sent off
-< HTTP/1.1 301 Moved Permanently
-< Connection: close
-< Content-Length: 0 | Отримання відповіді 301. Це означає, що сайт було пєрєнесено за новою адресою. |
-| 5 | Інформація сервера | < Server: Varnish
-< Retry-After: 0
-< Location: https://x.org/
-< Accept-Ranges: bytes
-< Date: Sat, 19 Sep 2026 21:21:03 GMT
-< Via: 1.1 varnish
-< X-Served-By: cache-fra-eddf8230049-FRA
-< X-Cache: HIT
-< X-Cache-Hits: 0
-< X-Timer: S1789852864.988109,VS0,VE0
-< Strict-Transport-Security: max-age=300  | Містить інформацію о сервері, кешу, час відповіді та політику HTTPS |
+| 1 | Формування запиту |  GET / HTTP/1.1 Host: x.org User-Agent: curl/8.13.0 Accept: */* Request completely sent off | Формування запиту до серверу, отримання відповіді. |
+| 2 | Визначення IP-адреси | Host x.org:80 was resolved. IPv6: (none) IPv4: 151.101.3.52 | Визначєння адреси і домена сайту. |
+| 3 | Встановлення з'єднання | Trying 151.101.3.52:80... Connected to x.org (151.101.3.52) port 80 | Встановалення з'єднання з адресою через 80-порт. |
+| 4 | Отримання відповіді | HTTP/1.1 301 Moved PermanentlyConnection: close Content-Length: 0 | Отримання відповіді 301. Це означає, що сайт було пєрєнесено за новою адресою. |
+| 5 | Інформація сервера | < Server: Varnish Retry-After: 0 Location: https://x.org/  Accept-Ranges: bytes  Date: Sat, 19 Sep 2026 21:21:03 GMT Via: 1.1 varnish X-Served-By: cache-fra-eddf8230049-FRA X-Cache: HIT X-Cache-Hits: 0 X-Timer: S1789852864.988109,VS0,VE0  Strict-Transport-Security: max-age=300  | Містить інформацію о сервері, кешу, час відповіді та політику HTTPS |
 
 *Групи впорядковано від найближчої до користувача (№ 1) до найближчої до апаратного забезпечення. Зайві рядки вилучити, за потреби — додати.*
 
