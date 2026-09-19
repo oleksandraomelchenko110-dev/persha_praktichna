@@ -702,7 +702,7 @@ how to fix it, please visit the webpage mentioned above.
 
 | № | Рядок виводу | Джерело (номер завдання) |
 |---|---|---|
-| 1 | Connection #1 to host x.org left intact | А.1 |
+| 1 | * ALPN: curl offers http/1.1 | А.1 |
 | 2 |  | |
 | 3 | * schannel: disabled automatic use of client certificate | А.1 |
 
