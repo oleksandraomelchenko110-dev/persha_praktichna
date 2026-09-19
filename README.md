@@ -242,13 +242,14 @@ Links             : {@{innerHTML=Gmail; innerText=Gmail; outerHTML=<A aria-label
                     s.google.com/ServiceLogin?hl=uk&amp;passive=true&amp;continue=https://www.google.com/&amp;ec=GAZAmg
                     Q; target=_top}...}
 ParsedHtml        : mshtml.HTMLDocumentClass
-RawContentLength  : 88875```
+RawContentLength  : 88875
+```
 
 ---
-
 ### A.5. Ресурси з некоректною конфігурацією сертифіката
 
 **Випадок 1**
+
 
 ```
 curl -v https://expired.badssl.com
