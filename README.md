@@ -672,13 +672,15 @@ how to fix it, please visit the webpage mentioned above.
 
 **2. Які рядки наявні у виводі A.1 і відсутні у виводі A.2? Чим це зумовлено?**
 
->
+> У  A.1 було використано https, а у A.2 http.
+```
 * Host x.org:80 was resolved.
 * IPv6: (none)
 * IPv4: 151.101.3.52
 * Trying 151.101.3.52:80...
 * Connected to x.org (151.101.3.52) port 80
 * using HTTP/1.x
+```
 
 **3. Звідки у виводі з'явилося значення `443`, якщо його не було вказано в адресі?**
 
