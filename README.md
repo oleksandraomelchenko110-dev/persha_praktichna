@@ -703,7 +703,7 @@ how to fix it, please visit the webpage mentioned above.
 | № | Рядок виводу | Джерело (номер завдання) |
 |---|---|---|
 | 1 | * ALPN: curl offers http/1.1 | А.1 |
-| 2 |  | |
+| 2 | < Accept-Ranges: bytes | А.1 |
 | 3 | * schannel: disabled automatic use of client certificate | А.1 |
 
 *Пояснення до цих рядків не потрібне.*
